@@ -1,0 +1,3 @@
+/home/sunil/myShell/build/CMakeFiles/myShell.dir
+/home/sunil/myShell/build/CMakeFiles/edit_cache.dir
+/home/sunil/myShell/build/CMakeFiles/rebuild_cache.dir
