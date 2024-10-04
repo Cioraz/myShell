@@ -2,12 +2,10 @@
 #include <string>
 #include <vector>
 #include <iostream>
-
 #define EOF (-1)
 using namespace std;
 
 Shell::Shell(){
-    status=1;
 }
 
 Shell::~Shell(){
@@ -52,7 +50,6 @@ string Shell::shell_read_line(){
 
 vector<string> Shell::shell_split_line(string &line){
     string curr_line=line;
-    string buffer="";
     int line_length=line.length();
     vector<string> parsedTokens;
     for(int i=0;i<line_length;i++){
@@ -70,10 +67,10 @@ vector<string> Shell::shell_split_line(string &line){
     if(!buffer.empty()){
         parsedTokens.push_back(buffer);
     }
-    for(auto it:parsedTokens) cout<<it<<endl;   //DEBUG
+
     return parsedTokens;
 }
 
 int Shell::shell_execute(vector<string> &args){
-    return 1;
+    return 0;
 }

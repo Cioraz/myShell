@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+using namespace std;
 
 class Shell{
 public:
@@ -10,18 +11,17 @@ public:
     ~Shell();
     void run();
     void parse();
-    void execute();
     void print();
     void exit();
 
 private:
-    std::string line;
-    std::vector<std::string> args;
+    string line;
+    vector<string> args;
     int status;
 
-    std::string shell_read_line();
-    std::vector<std::string> shell_split_line(std::string &line);
-    int shell_execute(std::vector<std::string> args);
+    string shell_read_line();
+    vector<string> shell_split_line(string &line);
+    int shell_execute(vector<string> &args);
 
 };
 

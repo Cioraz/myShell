@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[]){
     Shell shell;
-    // shell.run()
+    shell.shell_split_line("Hello World!\n This is some file");
 
     return EXIT_SUCCESS;
 }
